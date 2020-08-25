@@ -92,19 +92,19 @@
 
 	<h1>Transaktioner</h1>
 
-  <div class="form-element">
+  <div class="form-element"><label for="date"></label>
 	<input type="date" name="entry.1072551409" required placeholder="yyyy-mm-dd">
   </div>
 
-  <div class="form-element">
-	<input type="text" name="entry.1916072985" required placeholder="belopp">
+  <div class="form-element"><label for="amount"></label>
+	<input type="text" name="entry.1916072985" required placeholder="belopp" pattern="[0-9,]">
   </div>
 
-  <div class="form-element">
+  <div class="form-element"><label for="description"></label>
 	<input type="text" name="entry.1516825174" required placeholder="beskrivning">
   </div>
 
-  <div class="form-element">  
+  <div class="form-element"><label for="categories"></label>
 	<select name="entry.1378651134" id="kategorier">
 	<option value="none" selected disabled hidden>välj</option>
   <optgroup label="Boende">
