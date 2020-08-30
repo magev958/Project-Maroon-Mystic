@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="sv-se">
+<head>
+  <meta charset="utf-8">
+  <title>Transaktioner</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
+  <meta name="viewport" content="width=device-width"/>
+
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
+  <link rel='icon' type="image/x-icon" href="favicon.ico"/ >
+  <link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
+  <meta name="application-name" content="&nbsp;"/>
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+
+<style>
+
+body {
+  font-family: Georgia, serif;
+  height: 100vh;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  padding: 60px;
+  width: 784px;
+  max-width: calc(100% - 60px);
+  border-radius: 5px;
+  background: white;
+  background-image: url(favicon-128.png);
+  background-repeat: no-repeat;
+  background-position: 95% 2%;
+}
+
+.form-element {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+input,
+textarea,
+select,
+optgroup option {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom: 1px solid silver;
+  line-height: 2;
+  padding: 5px;
+  font-family: Georgia, serif;
+  color: gray;
+}
+
+optgroup {
+  color: black;
+}
+
+form button {
+  width: 100%;
+  padding: 20px;
+  color: white;
+  background: #1aaaef;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+</style>
+
+</head>
+<body>
+
+  <script type="text/javascript">var submitted=false;</script>
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='thanks.html';}"></iframe>
+
+  <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScdlaSqxMbTbCjGci9kDQr1QFVpNdMIHDW8ruTc6yQ7oZzD4Q/formResponse" method="post"  target="hidden_iframe" onsubmit="submitted=true;">
+
+	<h1>Transaktioner</h1>
+
+  <div class="form-element"><label for="date"></label>
+	<input type="date" name="entry.1072551409" required placeholder="yyyy-mm-dd">
+  </div>
+
+  <div class="form-element"><label for="amount"></label>
+	<input type="text" name="entry.1916072985" required placeholder="belopp">
+  </div>
+
+  <div class="form-element"><label for="description"></label>
+	<input type="text" name="entry.1516825174" required placeholder="beskrivning">
+  </div>
+
+  <div class="form-element"><label for="categories"></label>
+	<select name="entry.1378651134" id="kategorier">
+	<option value="none" selected disabled hidden>välj</option>
+  <optgroup label="Boende">
+	<option name="entry.1378651134" data-value="Hyra">Hyra</option>
+	<option name="entry.1378651134" data-value="Försäkring & avgifter">F&ouml;rs&auml;kring & avgifter</option>
+	<option name="entry.1378651134" data-value="El">El</option>
+	<option name="entry.1378651134" data-value="Ränta & Amortering">R&auml;nta & Amortering</option>
+	<option name="entry.1378651134" data-value="Media, tele & IT">Media, tele & IT</option>
+	<option name="entry.1378651134" data-value="Tjänster">Tj&auml;nster</option>
+  </optgroup>
+  <optgroup label="Fritid">
+	<option name="entry.1378651134" data-value="Kultur & Nöje">Kultur & N&ouml;je</option>
+	<option name="entry.1378651134" data-value="Hobby">Hobby</option>
+	<option name="entry.1378651134" data-value="Träning">Tr&auml;ning</option>
+	<option name="entry.1378651134" data-value="Fritid Övrigt">Fritid &Ouml;vrigt</option>
+  </optgroup>
+  <optgroup label="Hem & Tr&auml;dg&aring;rd">
+	<option name="entry.1378651134" data-value="Renovering">Renovering</option>
+	<option name="entry.1378651134" data-value="Inredning">Inredning</option>
+	<option name="entry.1378651134" data-value="Trädgård & Blommor">Tr&auml;dg&aring;rd & Blommor</option>
+  </optgroup>
+  <optgroup label="Mat & Dryck">
+	<option name="entry.1378651134" data-value="Restaurang">Restaurang</option>
+	<option name="entry.1378651134" data-value="Livsmedel">Livsmedel</option>
+	<option name="entry.1378651134" data-value="Fika & Snacks">Fika & Snacks</option>
+	<option name="entry.1378651134" data-value="Alkohol">Alkohol</option>
+	<option name="entry.1378651134" data-value="Mat Övrigt">Mat &Ouml;vrigt</option>
+  </optgroup>
+  <optgroup label="Transport">
+	<option name="entry.1378651134" data-value="Bil & Bränsle">Bil & Br&auml;nsle</option>
+	<option name="entry.1378651134" data-value="Tåg">T&aring;g</option>
+	<option name="entry.1378651134" data-value="Buss">Buss</option>
+	<option name="entry.1378651134" data-value="Flyg">Flyg</option>
+	<option name="entry.1378651134" data-value="Taxi">Taxi</option>
+	<option name="entry.1378651134" data-value="Transport Övrigt">Transport &Ouml;vrigt</option>
+  </optgroup>
+  <optgroup label="Shopping">
+	<option name="entry.1378651134" data-value="Kläder & Accessoarer">Kl&auml;der & Accessoarer</option>
+	<option name="entry.1378651134" data-value="Hemelektronik">Hemelektronik</option>
+	<option name="entry.1378651134" data-value="Böcker">B&ouml;cker</option>
+	<option name="entry.1378651134" data-value="Spel">Spel</option>
+	<option name="entry.1378651134" data-value="Presenter">Presenter</option>
+	<option name="entry.1378651134" data-value="Shopping Övrigt">Shopping &Ouml;vrigt</option>
+  </optgroup>
+  <optgroup label="H&auml;lsa">
+	<option name="entry.1378651134" data-value="Vård & Omsorg">V&aring;rd & Omsorg</option>
+	<option name="entry.1378651134" data-value="Apotek">Apotek</option>
+	<option name="entry.1378651134" data-value="Optik">Optik</option>
+	<option name="entry.1378651134" data-value="Skönhet">Sk&ouml;nhet</option>
+	<option name="entry.1378651134" data-value="Hälsa Övrigt">H&auml;lsa &Ouml;vrigt</option>
+  </optgroup>
+  <optgroup label="&Ouml;vrigt">
+	<option name="entry.1378651134" data-value="Kontantutag">Kontantutag</option>
+	<option name="entry.1378651134" data-value="Barn">Barn</option>
+	<option name="entry.1378651134" data-value="Övrigt">&Ouml;vrigt</option>
+  </optgroup>
+  <optgroup label="Sparande">
+	<option name="entry.308375657" data-value="Avanza">Avanza</option>
+	<option name="entry.308375657" data-value="Lysa">Lysa</option>
+	<option name="entry.308375657" data-value="Sparande Övrigt">Sparande &ouml;vrigt</option>
+  </optgroup>
+  <optgroup label="Inkomster">
+	<option name="entry.1378651134" data-value="Landsting Östergötland">Landsting &Ouml;sterg&ouml;tland</option>
+	<option name="entry.1378651134" data-value="Skatteåterbäring">Skatte&aring;terb&auml;ring</option>
+	<option name="entry.1378651134" data-value="Inkomst Övrigt">Inkomst &Ouml;vrigt</option>
+  </optgroup>
+	</select>
+  </div>
+
+  <div class="form-element">
+	<button type="submit">skicka</button>
+  </div>
+
+  </form>
+</body>
