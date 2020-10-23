@@ -6,6 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <script src="RGraph.common.core.js" ></script>
+    <script src="RGraph.common.sheets.js" ></script>
+	<script src="RGraph.meter.js"></script>
+
   <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
@@ -35,7 +39,7 @@ html, body {
 	overflow-x:hidden;
 }
 body {
-    text-align: center;
+	text-align: center;
 	color:#0078b8;
 	background-image: url(favicon-128.png);
 	background-repeat: no-repeat;
@@ -46,20 +50,21 @@ article {
 	flex-direction: column;
 	align-items: center;
 	height: 700px;
+	margin: 20px;
 }
 section {
 	width:auto;
-	margin-right: -160px;
 	font-size: 1.2em;
 }
 aside {
 	position:absolute;
-	right:-400px;
+	right:-140px;
 	top:370px;
 }
 h1 {
 	font-size: 3em;
 	padding-left: 128px;
+	padding-right: 128px;
 	padding-top: 30px;
 }
 h2 {
@@ -82,6 +87,7 @@ iframe#table {
 	width: 100%;
 	height: 22px;
 	border-style: none;
+	display: inline-block;
 }
 iframe#gauge {
 	width: 510px;
@@ -92,51 +98,86 @@ iframe#gauge {
 
 <body>
 
-<header>
-	<h1>Översikt</h1>
-</header>
+    <script>
+	    defaultColors = [
+        [0,30,'#8FCE21'],
+        [30,37.5,'#FFEE58'],
+        [37.5,45,'#FFC107'],
+        [45,52.5,'#FB8C00'],
+        [52.5,60,'#E64A19'],
+    ];
+	
+        new RGraph.Sheets('1ix8rJcgbGu_fnD0LqwBhv1rbFm3t2zYtVDix1lwDBLU', function (sheet)
+        {        
+            var value = sheet.get('L12');
 
-<article>
-	<section>
-		<h2>Senaste<br>transaktionerna</h2>
-    		<iframe id="table" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQC_I5AmZEbh7vZjuqdLGAZdUAhSrRDI0qBRrUFHqhVUadAU_RHs5NsisYytdt634TO_CP2E_b0FV5Q/pubhtml/sheet?headers=false&amp;gid=0&amp;range=O5:P5">
-    		</iframe>
-			<iframe id="table" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQC_I5AmZEbh7vZjuqdLGAZdUAhSrRDI0qBRrUFHqhVUadAU_RHs5NsisYytdt634TO_CP2E_b0FV5Q/pubhtml/sheet?headers=false&amp;gid=0&amp;range=Q5">
-    		</iframe><hr>
-    		<iframe id="table" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQC_I5AmZEbh7vZjuqdLGAZdUAhSrRDI0qBRrUFHqhVUadAU_RHs5NsisYytdt634TO_CP2E_b0FV5Q/pubhtml/sheet?headers=false&amp;gid=0&amp;range=O6:P6">
-    		</iframe>
-			<iframe id="table" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQC_I5AmZEbh7vZjuqdLGAZdUAhSrRDI0qBRrUFHqhVUadAU_RHs5NsisYytdt634TO_CP2E_b0FV5Q/pubhtml/sheet?headers=false&amp;gid=0&amp;range=Q6">
-    		</iframe><hr>
-    		<iframe id="table" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQC_I5AmZEbh7vZjuqdLGAZdUAhSrRDI0qBRrUFHqhVUadAU_RHs5NsisYytdt634TO_CP2E_b0FV5Q/pubhtml/sheet?headers=false&amp;gid=0&amp;range=O7:P7">
-    		</iframe>
-			<iframe id="table" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQC_I5AmZEbh7vZjuqdLGAZdUAhSrRDI0qBRrUFHqhVUadAU_RHs5NsisYytdt634TO_CP2E_b0FV5Q/pubhtml/sheet?headers=false&amp;gid=0&amp;range=Q7">
-    		</iframe><hr>
-    		<iframe id="table" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQC_I5AmZEbh7vZjuqdLGAZdUAhSrRDI0qBRrUFHqhVUadAU_RHs5NsisYytdt634TO_CP2E_b0FV5Q/pubhtml/sheet?headers=false&amp;gid=0&amp;range=O8:P8">
-    		</iframe>
-			<iframe id="table" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQC_I5AmZEbh7vZjuqdLGAZdUAhSrRDI0qBRrUFHqhVUadAU_RHs5NsisYytdt634TO_CP2E_b0FV5Q/pubhtml/sheet?headers=false&amp;gid=0&amp;range=Q8">
-    		</iframe><hr>
-    		<iframe id="table" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQC_I5AmZEbh7vZjuqdLGAZdUAhSrRDI0qBRrUFHqhVUadAU_RHs5NsisYytdt634TO_CP2E_b0FV5Q/pubhtml/sheet?headers=false&amp;gid=0&amp;range=O9:P9">
-    		</iframe>
-			<iframe id="table" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQC_I5AmZEbh7vZjuqdLGAZdUAhSrRDI0qBRrUFHqhVUadAU_RHs5NsisYytdt634TO_CP2E_b0FV5Q/pubhtml/sheet?headers=false&amp;gid=0&amp;range=Q9">
-    		</iframe><hr>
-    		<iframe id="table" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQC_I5AmZEbh7vZjuqdLGAZdUAhSrRDI0qBRrUFHqhVUadAU_RHs5NsisYytdt634TO_CP2E_b0FV5Q/pubhtml/sheet?headers=false&amp;gid=0&amp;range=O10:P10">
-    		</iframe>
-			<iframe id="table" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQC_I5AmZEbh7vZjuqdLGAZdUAhSrRDI0qBRrUFHqhVUadAU_RHs5NsisYytdt634TO_CP2E_b0FV5Q/pubhtml/sheet?headers=false&amp;gid=0&amp;range=Q10">
-    		</iframe><hr>
-    		<iframe id="table" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQC_I5AmZEbh7vZjuqdLGAZdUAhSrRDI0qBRrUFHqhVUadAU_RHs5NsisYytdt634TO_CP2E_b0FV5Q/pubhtml/sheet?headers=false&amp;gid=0&amp;range=O11:P11">
-    		</iframe>
-			<iframe id="table" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQC_I5AmZEbh7vZjuqdLGAZdUAhSrRDI0qBRrUFHqhVUadAU_RHs5NsisYytdt634TO_CP2E_b0FV5Q/pubhtml/sheet?headers=false&amp;gid=0&amp;range=Q11">
-    		</iframe>
-			</section>
-			<aside>
-			<iframe id="gauge" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQC_I5AmZEbh7vZjuqdLGAZdUAhSrRDI0qBRrUFHqhVUadAU_RHs5NsisYytdt634TO_CP2E_b0FV5Q/pubchart?oid=434833762&amp;format=interactive">
-			</iframe>
-	</aside>
-</article>
+            var gauge = new RGraph.Meter({
+                id: 'cvs',
+                min: 0,
+                max: 60,
+                value: value,
+                options: {
+					colorsRanges: defaultColors,
+					labelsCount: 0,
+					anglesStart: RGraph.PI - 1.6,
+					anglesEnd: RGraph.TWOPI - 1.55,
+					marginBottom: 150,
+					colorsStroke: 'white',
+					segmentsRadiusStart: 150,
+					needleRadius: 90,
+					needleType: 'pointer',
+					border: 0,
+					tickmarksSmallCount: 0,
+					tickmarksLargeCount: 0,
+                }
+            }).grow();
+        });
+    </script>
 
-<nav>
-	<button type="button" onclick="location.href='transactions.html'">lägg till ny transaktion</button>
-</nav>
+	<header>
+			<h1>Översikt</h1>
+	</header>
+
+	<article>
+		<section>
+			<h2>Senaste<br>transaktionerna</h2>
+				<iframe id="table" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQC_I5AmZEbh7vZjuqdLGAZdUAhSrRDI0qBRrUFHqhVUadAU_RHs5NsisYytdt634TO_CP2E_b0FV5Q/pubhtml/sheet?headers=false&amp;gid=0&amp;range=O5:P5">
+				</iframe>
+				<iframe id="table" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQC_I5AmZEbh7vZjuqdLGAZdUAhSrRDI0qBRrUFHqhVUadAU_RHs5NsisYytdt634TO_CP2E_b0FV5Q/pubhtml/sheet?headers=false&amp;gid=0&amp;range=Q5">
+				</iframe><hr>
+				<iframe id="table" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQC_I5AmZEbh7vZjuqdLGAZdUAhSrRDI0qBRrUFHqhVUadAU_RHs5NsisYytdt634TO_CP2E_b0FV5Q/pubhtml/sheet?headers=false&amp;gid=0&amp;range=O6:P6">
+				</iframe>
+				<iframe id="table" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQC_I5AmZEbh7vZjuqdLGAZdUAhSrRDI0qBRrUFHqhVUadAU_RHs5NsisYytdt634TO_CP2E_b0FV5Q/pubhtml/sheet?headers=false&amp;gid=0&amp;range=Q6">
+				</iframe><hr>
+				<iframe id="table" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQC_I5AmZEbh7vZjuqdLGAZdUAhSrRDI0qBRrUFHqhVUadAU_RHs5NsisYytdt634TO_CP2E_b0FV5Q/pubhtml/sheet?headers=false&amp;gid=0&amp;range=O7:P7">
+				</iframe>
+				<iframe id="table" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQC_I5AmZEbh7vZjuqdLGAZdUAhSrRDI0qBRrUFHqhVUadAU_RHs5NsisYytdt634TO_CP2E_b0FV5Q/pubhtml/sheet?headers=false&amp;gid=0&amp;range=Q7">
+				</iframe><hr>
+				<iframe id="table" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQC_I5AmZEbh7vZjuqdLGAZdUAhSrRDI0qBRrUFHqhVUadAU_RHs5NsisYytdt634TO_CP2E_b0FV5Q/pubhtml/sheet?headers=false&amp;gid=0&amp;range=O8:P8">
+				</iframe>
+				<iframe id="table" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQC_I5AmZEbh7vZjuqdLGAZdUAhSrRDI0qBRrUFHqhVUadAU_RHs5NsisYytdt634TO_CP2E_b0FV5Q/pubhtml/sheet?headers=false&amp;gid=0&amp;range=Q8">
+				</iframe><hr>
+				<iframe id="table" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQC_I5AmZEbh7vZjuqdLGAZdUAhSrRDI0qBRrUFHqhVUadAU_RHs5NsisYytdt634TO_CP2E_b0FV5Q/pubhtml/sheet?headers=false&amp;gid=0&amp;range=O9:P9">
+				</iframe>
+				<iframe id="table" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQC_I5AmZEbh7vZjuqdLGAZdUAhSrRDI0qBRrUFHqhVUadAU_RHs5NsisYytdt634TO_CP2E_b0FV5Q/pubhtml/sheet?headers=false&amp;gid=0&amp;range=Q9">
+				</iframe><hr>
+				<iframe id="table" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQC_I5AmZEbh7vZjuqdLGAZdUAhSrRDI0qBRrUFHqhVUadAU_RHs5NsisYytdt634TO_CP2E_b0FV5Q/pubhtml/sheet?headers=false&amp;gid=0&amp;range=O10:P10">
+				</iframe>
+				<iframe id="table" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQC_I5AmZEbh7vZjuqdLGAZdUAhSrRDI0qBRrUFHqhVUadAU_RHs5NsisYytdt634TO_CP2E_b0FV5Q/pubhtml/sheet?headers=false&amp;gid=0&amp;range=Q10">
+				</iframe><hr>
+				<iframe id="table" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQC_I5AmZEbh7vZjuqdLGAZdUAhSrRDI0qBRrUFHqhVUadAU_RHs5NsisYytdt634TO_CP2E_b0FV5Q/pubhtml/sheet?headers=false&amp;gid=0&amp;range=O11:P11">
+				</iframe>
+				<iframe id="table" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQC_I5AmZEbh7vZjuqdLGAZdUAhSrRDI0qBRrUFHqhVUadAU_RHs5NsisYytdt634TO_CP2E_b0FV5Q/pubhtml/sheet?headers=false&amp;gid=0&amp;range=Q11">
+				</iframe>
+		</section>
+		<aside>
+				<canvas id="cvs" width="300" height="300">[No canvas support]</canvas>
+		</aside>
+	</article>
+
+	<nav>
+			<button type="button" onclick="location.href='transactions.html'">lägg till ny transaktion</button>
+	</nav>
 
 </body>
 </html>
