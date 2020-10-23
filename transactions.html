@@ -30,9 +30,12 @@
 
 <style>
 
+html, body {
+	position:relative;
+	overflow-x:hidden;
+}
 body {
     text-align: center;
-	overflow: hidden;
 	color:#0078b8;
 	background-image: url(favicon-128.png);
 	background-repeat: no-repeat;
@@ -42,11 +45,11 @@ article {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
-	height: 640px;
+	height: 700px;
+	margin: 20px;
 }
 section {
-	width:400px;
+	width:auto;
 	font-size: 1.2em;
 }
 input,
@@ -60,7 +63,7 @@ optgroup option {
   line-height: 2;
   padding: 5px;
   margin-bottom: 30px;
-  width: 70%;
+  min-width: 400px;
   font-family: Georgia, serif;
   color: gray;
 }
@@ -69,10 +72,12 @@ optgroup {
 }
 h1 {
 	font-size: 3em;
+	padding-left: 128px;
+	padding-right: 128px;
+	padding-top: 30px;
 }
 h2 {
-	padding-left: 40px;
-    text-align: left;
+	text-align:left;
 }
 nav button {
 	width: 300px;
@@ -89,85 +94,80 @@ nav button {
 </head>
 <body>
 
-  <script type="text/javascript">var submitted=false;</script>
-  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='thanks.html';}"></iframe>
+<script type="text/javascript">var submitted=false;</script>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='thanks.html';}"></iframe>
 
-  <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSciA6CssXiMQOthD9W6pK8fVIVArC9Fm0-4FrOt1AYJSzRLWA/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSciA6CssXiMQOthD9W6pK8fVIVArC9Fm0-4FrOt1AYJSzRLWA/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
 
-<header>
-	<h1>Transaktioner</h1>
-</header>
+	<header>
+			<h1>Transaktioner</h1>
+	</header>
 
-<article>
-	<section>
-		<h2>Datum</h2>
-		<input type="date" name="entry.876086869" required placeholder="yyyy-mm-dd">
-	</section>
-	
-	<section>
-		<h2>Summa</h2>
-		<input type="text" name="entry.1784226391" required placeholder="belopp">
-	</section>
+	<article>
+		<section>
+			<h2>Datum</h2>
+			<input type="date" name="entry.876086869" required placeholder="yyyy-mm-dd">
 
-	<section>	
-		<h2>Beskrivning</h2>
-		<input type="text" name="entry.1287339705" required placeholder="beskrivning">
-	</section>
+			<h2>Summa</h2>
+			<input type="text" name="entry.1784226391" required placeholder="belopp">
 
-	<section>
-		<h2>Kategori</h2>
-	<select name="entry.1778965403" id="kategorier" required>
-	<option value="none" selected disabled hidden>välj</option>
-  <optgroup label="Boende">
-	<option name="entry.1778965403" data-value="Hyra">Hyra</option>
-	<option name="entry.1778965403" data-value="Bolån">Bol&aring;n</option>
-	<option name="entry.1778965403" data-value="El">El</option>
-	<option name="entry.1778965403" data-value="Hemförsäkring">Hemf&ouml;rs&auml;kring</option>
-  </optgroup>
-  <optgroup label="Transport">
-	<option name="entry.1778965403" data-value="Bil">Bil</option>
-	<option name="entry.1778965403" data-value="Kollektivresor">Kollektivresor</option>
-  </optgroup>
-  <optgroup label="Allm&auml;nna omkostnader">
-	<option name="entry.1778965403" data-value="Försäkringar">F&ouml;rs&auml;kringar</option>
-	<option name="entry.1778965403" data-value="Fackförbund">Fackförbund</option>
-	<option name="entry.1778965403" data-value="A-kassa">A-kassa</option>
-	<option name="entry.1778965403" data-value="Återbetalning lån">&Aring;terbetalning l&aring;n</option>
-	<option name="entry.1778965403" data-value="Abonnemang">Abonnemang</option>
-	<option name="entry.1778965403" data-value="Bankavgifter">Bankavgifter</option>
-	<option name="entry.1778965403" data-value="Livsmedel">Livsmedel</option>
-	<option name="entry.1778965403" data-value="Underhåll">Underh&aring;ll</option>
-	<option name="entry.1778965403" data-value="Barnspar">Barnspar</option>
-	<option name="entry.1778965403" data-value="Övrigt">&Ouml;vrigt</option>
-  </optgroup>
-  <optgroup label="R&ouml;rliga kostnader">
-	<option name="entry.1778965403" data-value="Snacks & fika">Snacks & fika</option>
-	<option name="entry.1778965403" data-value="Äta ute">&Auml;ta ute</option>
-	<option name="entry.1778965403" data-value="Hygien- & skönhetsartiklar">Hygien- & sk&ouml;nhetsartiklar</option>
-	<option name="entry.1778965403" data-value="Förbrukningsprodukter">F&ouml;rbrukningsprodukter</option>
-	<option name="entry.1778965403" data-value="Kläder & skor">Kläder & skor</option>
-	<option name="entry.1778965403" data-value="Hemutrustning">Hemutrustning</option>
-	<option name="entry.1778965403" data-value="Hälsovård">H&auml;lsov&aring;rd</option>
-	<option name="entry.1778965403" data-value="Fritid & nöjen">Fritid & n&ouml;jen</option>
-	<option name="entry.1778965403" data-value="Barn">Barn</option>
-	<option name="entry.1778965403" data-value="Övriga rörliga kostnader">&Ouml;vriga r&ouml;rliga kostnader</option>
-  </optgroup>
-  <optgroup label="Sparande">
-	<option name="entry.1778965403" data-value="Avanza">Månadssparande</option>
-	<option name="entry.1778965403" data-value="Lysa">Pensionssparande</option>
-  </optgroup>
-  <optgroup label="Inkomster">
-	<option name="entry.1778965403" data-value="Landsting Östergötland">L&ouml;n</option>
-	<option name="entry.1778965403" data-value="Övriga inkomster">&Ouml;vriga inkomster</option>
-  </optgroup>
-	</select>
-	</section>	
-</article>
+			<h2>Beskrivning</h2>
+			<input type="text" name="entry.1287339705" required placeholder="beskrivning">
 
-<nav>
-	<button type="submit">skicka</button>
-</nav>
+			<h2>Kategori</h2>
+				<select name="entry.1778965403" id="kategorier" required>
+						<option value="none" selected disabled hidden>välj</option>
+					<optgroup label="Boende">
+						<option name="entry.1778965403" data-value="Hyra">Hyra</option>
+						<option name="entry.1778965403" data-value="Bolån">Bol&aring;n</option>
+						<option name="entry.1778965403" data-value="El">El</option>
+						<option name="entry.1778965403" data-value="Hemförsäkring">Hemf&ouml;rs&auml;kring</option>
+					</optgroup>
+					<optgroup label="Transport">
+						<option name="entry.1778965403" data-value="Bil">Bil</option>
+						<option name="entry.1778965403" data-value="Kollektivresor">Kollektivresor</option>
+					</optgroup>
+					<optgroup label="Allm&auml;nna omkostnader">
+						<option name="entry.1778965403" data-value="Försäkringar">F&ouml;rs&auml;kringar</option>
+						<option name="entry.1778965403" data-value="Fackförbund">Fackförbund</option>
+						<option name="entry.1778965403" data-value="A-kassa">A-kassa</option>
+						<option name="entry.1778965403" data-value="Återbetalning lån">&Aring;terbetalning l&aring;n</option>
+						<option name="entry.1778965403" data-value="Abonnemang">Abonnemang</option>
+						<option name="entry.1778965403" data-value="Bankavgifter">Bankavgifter</option>
+						<option name="entry.1778965403" data-value="Livsmedel">Livsmedel</option>
+						<option name="entry.1778965403" data-value="Underhåll">Underh&aring;ll</option>
+						<option name="entry.1778965403" data-value="Barnspar">Barnspar</option>
+						<option name="entry.1778965403" data-value="Övrigt">&Ouml;vrigt</option>
+					</optgroup>
+					<optgroup label="R&ouml;rliga kostnader">
+						<option name="entry.1778965403" data-value="Snacks & fika">Snacks & fika</option>
+						<option name="entry.1778965403" data-value="Äta ute">&Auml;ta ute</option>
+						<option name="entry.1778965403" data-value="Hygien- & skönhetsartiklar">Hygien- & sk&ouml;nhetsartiklar</option>
+						<option name="entry.1778965403" data-value="Förbrukningsprodukter">F&ouml;rbrukningsprodukter</option>
+						<option name="entry.1778965403" data-value="Kläder & skor">Kläder & skor</option>
+						<option name="entry.1778965403" data-value="Hemutrustning">Hemutrustning</option>
+						<option name="entry.1778965403" data-value="Hälsovård">H&auml;lsov&aring;rd</option>
+						<option name="entry.1778965403" data-value="Fritid & nöjen">Fritid & n&ouml;jen</option>
+						<option name="entry.1778965403" data-value="Barn">Barn</option>
+						<option name="entry.1778965403" data-value="Övriga rörliga kostnader">&Ouml;vriga r&ouml;rliga kostnader</option>
+					</optgroup>
+					<optgroup label="Sparande">
+						<option name="entry.1778965403" data-value="Avanza">Månadssparande</option>
+						<option name="entry.1778965403" data-value="Lysa">Pensionssparande</option>
+					</optgroup>
+					<optgroup label="Inkomster">
+						<option name="entry.1778965403" data-value="Landsting Östergötland">L&ouml;n</option>
+						<option name="entry.1778965403" data-value="Övriga inkomster">&Ouml;vriga inkomster</option>
+					</optgroup>
+				</select>
+		</section>	
+	</article>
 
-  </form>
+	<nav>
+			<button type="submit">skicka</button>
+	</nav>
+
+</form>
+
 </body>
 </html>
