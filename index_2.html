@@ -81,11 +81,6 @@
 			border-style: none;
 			display: inline-block;
 			}
-			iframe.gauge {
-			width: 510px;
-			height: 316px;
-			border-style: none;
-			}
 		</style>
 	<body>
 		<header>
@@ -136,42 +131,33 @@
 		<nav>
 			<button type="button" onclick="location.href='transactions.html'">lägg till ny transaktion</button>
 		</nav>
-		<script src="RGraph.common.core.js" ></script>
-		<script src="RGraph.common.sheets.js" ></script>
-		<script src="RGraph.meter.js"></script>
+		<script src="RGraph.js" ></script>
 		<script>
 			defaultColors = [
-				[0,30,'#8FCE21'],
-				[30,37.5,'#FFEE58'],
-				[37.5,45,'#FFC107'],
-				[45,52.5,'#FB8C00'],
-				[52.5,60,'#E64A19'],
-			];
-			
-			new RGraph.Sheets('1ix8rJcgbGu_fnD0LqwBhv1rbFm3t2zYtVDix1lwDBLU', function (sheet)
-			{
-			var value = sheet.get('L12');
-			
-			var gauge = new RGraph.Meter({
-				id: 'cvs',
-				min: 0,
-				max: 60,
-				value: value,
-				options: {
-					colorsRanges: defaultColors,
-					labelsCount: 0,
-					anglesStart: RGraph.PI - 1.6,
-					anglesEnd: RGraph.TWOPI - 1.55,
-					marginBottom: 150,
-					colorsStroke: 'white',
-					segmentsRadiusStart: 150,
-					needleRadius: 90,
-					needleType: 'pointer',
-					border: 0,
-					tickmarksSmallCount: 0,
-					tickmarksLargeCount: 0,
-				}
-			}).grow();
+				[0, 30, "#8FCE21"],
+				[30, 37.5, "#FFEE58"],
+				[37.5, 45, "#FFC107"],
+				[45, 52.5, "#FB8C00"],
+				[52.5, 60, "#E64A19"]
+			], new RGraph.Sheets("1ix8rJcgbGu_fnD0LqwBhv1rbFm3t2zYtVDix1lwDBLU", function(e) {
+				var a = e.get("L12");
+				new RGraph.Meter({
+					id: "cvs",
+					min: 0,
+					max: 60,
+					value: a,
+					options: {
+						colorsRanges: defaultColors,
+						labelsCount: 0,
+						anglesStart: RGraph.PI - 1.6,
+						anglesEnd: RGraph.TWOPI - 1.55,
+						marginBottom: 150,
+						segmentsRadiusStart: 150,
+						needleRadius: 90,
+						needleType: "pointer",
+						border: 0
+					}
+				}).grow()
 			});
 		</script>
 	</body>
