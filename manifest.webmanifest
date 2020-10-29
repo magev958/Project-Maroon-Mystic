@@ -70,15 +70,15 @@
     "type": "image/png"
   }, {
     "src": "mstile-70x70.png",
-    "sizes": "70x70",
+    "sizes": "128x128",
     "type": "image/png"
   }, {
     "src": "mstile-150x150.png",
-    "sizes": "150x150",
+    "sizes": "270x270",
     "type": "image/png"
   }, {
     "src": "mstile-310x310.png",
-    "sizes": "310x310",
+    "sizes": "558x558",
     "type": "image/png"
   }]
 }
