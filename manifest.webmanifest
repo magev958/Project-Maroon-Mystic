@@ -2,9 +2,10 @@
   "name": "Personlig budgetkalkyl",
   "short_name": "Budget",
   "description": "En personlig budget kalkyl för Magnus",
+  "lang": "sv-se",
   "display": "fullscreen",
-  "start_url": "/",
-  "scope": "/app/",
+  "start_url": "index.html",
+  "scope": "/",
   "theme_color": "#ffffff00",
   "background_color": "#ffffff",
   "icons": [{
