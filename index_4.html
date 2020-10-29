@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Budget</title>
+		<meta name="description" content="Personlig budgetkalkyl för Magnus">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
 		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
@@ -77,9 +78,15 @@
 			}
 			iframe.table {
 			width: 100%;
-			height: 22px;
+			height: 400px;
 			border-style: none;
 			display: inline-block;
+			position: static !important;
+			text-align:left;
+			left: 0;
+			}
+			iframe table, iframe th, iframe td {
+			text-align: left;
 			}
 		</style>
 	<body>
@@ -89,7 +96,7 @@
 		<article>
 			<section>
 				<h2>Senaste<br>transaktionerna</h2>
-				<iframe class="table" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQC_I5AmZEbh7vZjuqdLGAZdUAhSrRDI0qBRrUFHqhVUadAU_RHs5NsisYytdt634TO_CP2E_b0FV5Q/pubhtml/sheet?headers=false&amp;gid=0&amp;range=R5:S18">
+				<iframe title="Transaktioner" class="table" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQC_I5AmZEbh7vZjuqdLGAZdUAhSrRDI0qBRrUFHqhVUadAU_RHs5NsisYytdt634TO_CP2E_b0FV5Q/pubhtml/sheet?headers=false&amp;gid=0&amp;range=R5:S18">
 				</iframe>
 			</section>
 			<aside>
