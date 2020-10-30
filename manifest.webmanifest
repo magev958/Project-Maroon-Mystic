@@ -81,8 +81,8 @@
     "sizes": "558x558",
     "type": "image/png"
   }, {
-    "src": "favicon_800x800.png",
-    "sizes": "800x800",
+    "src": "favicon_269x269.png",
+    "sizes": "269x269",
     "type": "image/png",
     "purpose": "maskable"
   }]
