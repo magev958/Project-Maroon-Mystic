@@ -80,5 +80,10 @@
     "src": "mstile-310x310.png",
     "sizes": "558x558",
     "type": "image/png"
+  }, {
+    "src": "favicon_800x800.png",
+    "sizes": "800x800",
+    "type": "image/png",
+    "purpose": "maskable"
   }]
 }
