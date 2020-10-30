@@ -6,13 +6,13 @@
   "categories": "finance",
   "display": "fullscreen",
   "start_url": "https://magev958.github.io/Project-Maroon-Mystic/index.html",
-  "scope": "/",
+  "scope": "/Project-Maroon-Mystic/",
   "orientation": "portrait-primary",
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
   "serviceworker": {
     "src": "https://magev958.github.io/Project-Maroon-Mystic/serviceWorker.js",
-    "scope": "/",
+    "scope": "/Project-Maroon-Mystic/",
     "type": "",
     "update_via_cache": "none"
   },
