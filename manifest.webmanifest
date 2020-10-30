@@ -11,7 +11,7 @@
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
   "serviceworker": {
-    "src": "serviceWorker.js",
+    "src": "/serviceWorker.js",
     "scope": "/",
     "type": "",
     "update_via_cache": "none"
