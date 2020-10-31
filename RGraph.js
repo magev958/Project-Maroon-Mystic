@@ -1,4 +1,5 @@
 // RGraph common core version: 2020-10-03
+//https://www.rgraph.net 
 
 window.RGraph = window.RGraph || {
 		isrgraph: !0,
