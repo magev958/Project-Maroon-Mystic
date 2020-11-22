@@ -21,6 +21,8 @@
 		<link rel="preconnect" href="https://spreadsheets.google.com" />
 		<link rel="dns-prefetch" href="https://spreadsheets.google.com" />
 
+		<script type="module" src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwaauth@latest/dist/pwa-auth.min.js"></script>
+
 		<script>
 			if ('serviceWorker' in navigator) {
 			  navigator.serviceWorker.register('serviceWorker.js')
@@ -102,6 +104,8 @@
 		</nav>
 		<footer>
 			<pwa-install>Install</pwa-install>
+			
+			<pwa-auth googlekey="230683554389-80onovat5pkf196fp9vjbdnmgllff30d.apps.googleusercontent.com"></pwa-auth>
 		</footer>
 		<script src="RGraph.js"></script>
 		<script type="module" src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwainstall"></script>
