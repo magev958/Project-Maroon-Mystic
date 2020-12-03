@@ -15,6 +15,26 @@
   <button onclick="showCurrentUserInfo()">Show current user info</button>
   <button id="signout" onclick="signOut()">Sign out</button>
   <div id="name"></div>
+  
+    <div id="greeting">
+    You are not authorized to view this content
+  </div>
+  <div id="dashboard">
+    ...
+  </div>
+  <script>
+    // hide initially
+    $('#dashboard').hide()
+
+    function onSignIn(googleUser) {
+      setTimeout(function() {
+        // show the content
+        $('#greeting').hide()
+        $('#dashboard').show()
+      }, 1000);
+    }
+  </script>
+  
   <script>
     var auth2 = undefined;
     function onLibraryLoaded() {
