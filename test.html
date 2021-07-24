@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="sv-se">
+
+<head>
+    <meta charset="utf-8">
+    <title>Transaktioner</title>
+    <meta name="description" content="Personlig budgetkalkyl för Magnus">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="CSS/styles.css">
+</head>
+
+<body>
+    <script type="text/javascript">
+        var submitted=false;
+    </script><iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){window.location='thanks.html';}"></iframe>
+    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScrg007kJR1-F9phcJVoqAg3tLqYc2rfWE9BwneDLGWPu-8-w/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+        <header>
+            <h1>Transaktioner</h1>
+        </header>
+        <article>
+            <section>
+                <h2><label for="date">Datum</label></h2><input type="date" id="date" name="entry.1029495717" required placeholder="yyyy-mm-dd">
+                <h2><label for="sum">Summa</label></h2><input type="number" min="0" id="sum" name="entry.778802812" required placeholder="belopp">
+                <h2><label for="category">Kategori</label></h2><select id="category" name="entry.1778965403" required><option value="none" selected disabled hidden>välj</option><optgroup label="Investeringar"><option name="entry.395426412" data-value="Avanza">Avanza</option><option name="entry.395426412" data-value="Nordnet">Nordnet</option><option name="entry.395426412" data-value="Lysa">Lysa</option><option name="entry.395426412" data-value="Garantum">Garantum</option></optgroup></select>
+			</section>
+        </article>
+        <nav><button type="submit">skicka</button></nav>
+    </form>
+</body>
+
+</html>
