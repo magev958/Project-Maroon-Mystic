@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="sv-se">
+
+<head>
+    <meta charset="utf-8">
+    <title>Investeringar</title>
+    <meta name="description" content="Personlig budgetkalkyl för Magnus">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <script type="text/javascript">
+        var submitted=false;
+    </script>
+	<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){window.location='thanks.html';}"></iframe>
+    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd_WQwTe9mlrvjfxXfl5zECzDD-9Z3ss2QDEzqz_DcI64w2DQ/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+    <header>
+        <h1>Investeringar</h1>
+    </header>
+    <article>
+        <section>
+			<fieldset>
+				<legend>Datum</legend>
+				<input type="date" id="date" name="entry.957079605" required placeholder="yyyy-mm-dd">
+            </fieldset>
+			<fieldset>
+                <legend>Avanza</legend>
+                <input type="number" min="0" step="0.01" id="sum" name="entry.163121068" required placeholder="belopp">
+            </fieldset>
+            <fieldset>
+                <legend>Lysa</legend>
+                <input type="number" min="0" step="0.01" id="sum" name="entry.999915928" required placeholder="belopp">
+            </fieldset>
+            <fieldset>
+                <legend>Nordnet</legend>
+                <input type="number" min="0" step="0.01" id="sum" name="entry.2074101085" required placeholder="belopp">
+            </fieldset>
+            <fieldset>
+                <legend>Garantum</legend>
+                <input type="number" min="0" step="0.01" id="sum" name="entry.822899927" required placeholder="belopp">
+            </fieldset>
+        </section>
+    </article>
+    <nav>
+		<button onclick="submitform()">skicka</button>
+    </nav>
+    </form>
+</body>
+
+</html>
