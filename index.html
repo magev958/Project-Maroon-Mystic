@@ -20,7 +20,12 @@
 		<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
 		<meta name="msapplication-TileColor" content="#da532c">
 		<meta name="theme-color" content="#ffffff">
-		<link rel="stylesheet" href="styles.css">
+		
+		<link rel="stylesheet" href="CascadingStyleSheets/styles.css">
+		
+		<script src="Javascript/RGraph/RGraph.common.core.js"></script>
+		<script src="Javascript/RGraph/RGraph.common.sheets.js"></script>
+		<script src="Javascript/RGraph/RGraph.meter.js"></script>
 		<script>
 			if ('serviceWorker' in navigator){navigator.serviceWorker.register('serviceWorker.js').catch(function(err){console.log('ServiceWorker registration failed: ', err);});}
 		</script>
@@ -43,9 +48,28 @@
 			<button type="button" onclick="location.href='investments.html'">investeringar
 			</button>
 		</nav>
-		<script src="RGraph.js"></script>
 		<script>
-			defaultColors=[[0, 30, "#8FCE21"],[30, 37.5, "#FFEE58"],[37.5, 45, "#FFC107"],[45, 52.5, "#FB8C00"],[52.5, 60, "#E64A19"]], new RGraph.Sheets("1ix8rJcgbGu_fnD0LqwBhv1rbFm3t2zYtVDix1lwDBLU", 2, function(e){var a=e.get('I15');new RGraph.Meter({id: "cvs",min: 0,max: 60,value: a,options:{colorsRanges: defaultColors,labelsCount: 0,anglesStart: RGraph.PI - 1.6,anglesEnd: RGraph.TWOPI - 1.55,marginBottom: 150,segmentsRadiusStart: 150,needleRadius: 90,needleType: "pointer",border: 0}}).grow()});
+			defaultColors=[[0, 30, "#8FCE21"],[30, 37.5, "#FFEE58"],[37.5, 45, "#FFC107"],[45, 52.5, "#FB8C00"],[52.5, 60, "#E64A19"]],
+			new RGraph.Sheets('AIzaSyA9oqmzJDyQQ451lKHuBaCOzRTw9hsETxY', '1ix8rJcgbGu_fnD0LqwBhv1rbFm3t2zYtVDix1lwDBLU', 'Dashboard', function(e)
+			{
+				var a=e.get('I15');
+			new RGraph.Meter({
+				id: "cvs",
+				min: 0,
+				max: 60,
+				value: a,
+				options:{
+					colorsRanges: defaultColors,
+					labelsCount: 0,
+					anglesStart: RGraph.PI - 1.6,
+					anglesEnd: RGraph.TWOPI - 1.55,
+					marginBottom: 150,
+					segmentsRadiusStart: 150,
+					needleRadius: 90,
+					needleType: "pointer",
+					border: 0
+					}
+				}).grow()});
 		</script>
 	</body>
 </html>
