@@ -5,25 +5,25 @@
   "lang": "sv-se",
   "categories": "finance",
   "display": "fullscreen",
-  "start_url": "Projekt/Projekt%3A%20Maroon%20Mystic/WebbApp/MultiPage/",
-  "scope": "Projekt/Projekt%3A%20Maroon%20Mystic/WebbApp/MultiPage/",
+  "start_url": "https://magev958.github.io/Project-Maroon-Mystic/MultiPage/https://magev958.github.io/Project-Maroon-Mystic/MultiPage/Projekt/Projekt%3A%20Maroon%20Mystic/WebbApp/MultiPage/",
+  "scope": "https://magev958.github.io/Project-Maroon-Mystic/MultiPage/https://magev958.github.io/Project-Maroon-Mystic/MultiPage/Projekt/Projekt%3A%20Maroon%20Mystic/WebbApp/MultiPage/",
   "orientation": "portrait-primary",
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
   "serviceworker": {
-    "src": "https://dk6awepavhzl7aa5gsaznw.on.drv.tw/Projekt/Projekt%3A%20Maroon%20Mystic/WebbApp/MultiPage/serviceWorker.js",
-    "scope": "Projekt/Projekt%3A%20Maroon%20Mystic/WebbApp/MultiPage/",
+    "src": "https://magev958.github.io/Project-Maroon-Mystic/MultiPage/https://magev958.github.io/Project-Maroon-Mystic/MultiPage/Projekt/Projekt%3A%20Maroon%20Mystic/WebbApp/MultiPage/serviceWorker.js",
+    "scope": "https://magev958.github.io/Project-Maroon-Mystic/MultiPage/https://magev958.github.io/Project-Maroon-Mystic/MultiPage/Projekt/Projekt%3A%20Maroon%20Mystic/WebbApp/MultiPage/",
     "type": "",
     "update_via_cache": "none"
   },
   "icons": [
 	{
-	"src": "Projekt/Projekt%3A%20Maroon%20Mystic/WebbApp/MultiPage/Images/icon-192.png",
+	"src": "https://magev958.github.io/Project-Maroon-Mystic/MultiPage/https://magev958.github.io/Project-Maroon-Mystic/MultiPage/Projekt/Projekt%3A%20Maroon%20Mystic/WebbApp/MultiPage/Images/icon-192.png",
 	"type": "image/png",
 	"sizes": "192x192"
 	},
     {
-	"src": "Projekt/Projekt%3A%20Maroon%20Mystic/WebbApp/MultiPage/Images/icon-512.png",
+	"src": "https://magev958.github.io/Project-Maroon-Mystic/MultiPage/Projekt/Projekt%3A%20Maroon%20Mystic/WebbApp/MultiPage/Images/icon-512.png",
 	"type": "image/png",
 	"sizes": "512x512"
 	}
@@ -34,49 +34,49 @@
       "short_name": "Budget",
       "description": "Personlig begdetkalkyl för Magnus",
       "url": "/index.html",
-      "icons": [{ "src": "Projekt/Projekt%3A%20Maroon%20Mystic/WebbApp/MultiPage/Images/icon-192.png", "sizes": "192x192" }]
+      "icons": [{ "src": "https://magev958.github.io/Project-Maroon-Mystic/MultiPage/Projekt/Projekt%3A%20Maroon%20Mystic/WebbApp/MultiPage/Images/icon-192.png", "sizes": "192x192" }]
     },
     {
       "name": "Månadsfördelning",
       "short_name": "Fördelning",
       "description": "Senaste månadens fördelning",
       "url": "/distribution.html",
-      "icons": [{ "src": "Projekt/Projekt%3A%20Maroon%20Mystic/WebbApp/MultiPage/Images/icon-192.png", "sizes": "192x192" }]
+      "icons": [{ "src": "https://magev958.github.io/Project-Maroon-Mystic/MultiPage/Projekt/Projekt%3A%20Maroon%20Mystic/WebbApp/MultiPage/Images/icon-192.png", "sizes": "192x192" }]
     },
     {
       "name": "Investeringstransaktioner",
       "short_name": "Investeringar",
       "description": "Utfall av investeringarna",
       "url": "/investments.html",
-      "icons": [{ "src": "Projekt/Projekt%3A%20Maroon%20Mystic/WebbApp/MultiPage/Images/icon-192.png", "sizes": "192x192" }]
+      "icons": [{ "src": "https://magev958.github.io/Project-Maroon-Mystic/MultiPage/Projekt/Projekt%3A%20Maroon%20Mystic/WebbApp/MultiPage/Images/icon-192.png", "sizes": "192x192" }]
     },
     {
       "name": "Senaste transaktioner",
       "short_name": "Senaste",
       "description": "7 senaste transaktioner",
       "url": "/latest.html",
-      "icons": [{ "src": "Projekt/Projekt%3A%20Maroon%20Mystic/WebbApp/MultiPage/Images/icon-192.png", "sizes": "192x192" }]
+      "icons": [{ "src": "https://magev958.github.io/Project-Maroon-Mystic/MultiPage/Projekt/Projekt%3A%20Maroon%20Mystic/WebbApp/MultiPage/Images/icon-192.png", "sizes": "192x192" }]
     },
     {
       "name": "Nedkopplad wifi",
       "short_name": "Nedkopplad",
       "description": "Ingen åtkomst till wifi ",
       "url": "/offline.html",
-      "icons": [{ "src": "Projekt/Projekt%3A%20Maroon%20Mystic/WebbApp/MultiPage/Images/icon-192.png", "sizes": "192x192" }]
+      "icons": [{ "src": "https://magev958.github.io/Project-Maroon-Mystic/MultiPage/Projekt/Projekt%3A%20Maroon%20Mystic/WebbApp/MultiPage/Images/icon-192.png", "sizes": "192x192" }]
     },
     {
       "name": "Tack",
       "short_name": "Tack",
       "description": "Tack för en berömlig insats",
       "url": "/thanks.html",
-      "icons": [{ "src": "Projekt/Projekt%3A%20Maroon%20Mystic/WebbApp/MultiPage/Images/icon-192.png", "sizes": "192x192" }]
+      "icons": [{ "src": "https://magev958.github.io/Project-Maroon-Mystic/MultiPage/Projekt/Projekt%3A%20Maroon%20Mystic/WebbApp/MultiPage/Images/icon-192.png", "sizes": "192x192" }]
     },
     {
       "name": "Rutintransaktioner",
       "short_name": "Transaktioner",
       "description": "Skicka transaktioner",
       "url": "/transactions.html",
-      "icons": [{ "src": "Projekt/Projekt%3A%20Maroon%20Mystic/WebbApp/MultiPage/Images/icon-192.png", "sizes": "192x192" }]
+      "icons": [{ "src": "https://magev958.github.io/Project-Maroon-Mystic/MultiPage/Projekt/Projekt%3A%20Maroon%20Mystic/WebbApp/MultiPage/Images/icon-192.png", "sizes": "192x192" }]
     }
   ]
 }
